@@ -1,3 +1,16 @@
 from django.shortcuts import render
 
-# Create your views here.
+def my_page(request):
+    context = {
+        "name": "Gregory",
+        "city": "Johannesburg"
+    }
+
+    return render(request, 'my_page.html', context)
+
+def base(request):
+    context = {
+
+    }
+
+    return render(request, 'base.html', context)
