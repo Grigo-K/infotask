@@ -17,11 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from first.views import my_page
-from first.views import base
+from first.views import index, calc, time
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('my_page/', my_page),
-    path('', base),
+    path('', index),
+    path('time/', time),
+    path('calc/', calc),
 ]
